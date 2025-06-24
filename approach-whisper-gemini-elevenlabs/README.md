@@ -45,11 +45,9 @@ This pipeline delivers a conversational experience in authentic Lebanese Arabic 
 
 1. **Open the Colab Notebook**
    [Run Approach 2 in Colab](https://colab.research.google.com/drive/1OLPctrVLVyocPHtYTYdmCGLBGkZO3ddY?usp=sharing)
-2. **Install Dependencies**
+2. **Ensure Requirements**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+   * All dependencies are installed automatically by the notebook’s setup cell.
 3. **Mount & Upload**
 
    * Ensure the folder `maguy_knowledge_base/` is present in the working directory with all prompt files.
@@ -76,3 +74,5 @@ This pipeline delivers a conversational experience in authentic Lebanese Arabic 
 * **Gradio Audio Behavior:** After recording and before clicking **Send to Maguy**, wait **2–3 seconds** for the audio widget to disappear and reappear. This delay is a standard Gradio rendering quirk—only once it reappears can the audio be sent correctly.
 
 ---
+
+*For questions or feedback, open an issue or contact the maintainer.*
