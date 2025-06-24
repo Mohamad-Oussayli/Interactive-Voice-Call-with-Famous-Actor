@@ -74,5 +74,3 @@ This pipeline delivers a conversational experience in authentic Lebanese Arabic 
 * **Gradio Audio Behavior:** After recording and before clicking **Send to Maguy**, wait **2–3 seconds** for the audio widget to disappear and reappear. This delay is a standard Gradio rendering quirk—only once it reappears can the audio be sent correctly.
 
 ---
-
-*For questions or feedback, open an issue or contact the maintainer.*
