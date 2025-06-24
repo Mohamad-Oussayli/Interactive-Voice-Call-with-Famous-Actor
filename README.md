@@ -34,22 +34,23 @@ Maguy Bou Ghosn is represented through a voice-bot that listens in colloquial Le
 
 ## 🚀 Approach 1: Whisper → Gemma3 → EdgeTTS → RVC
 
-**Notebook:**
-[Interactive Voice Call with Famous Actor.ipynb](approach-whisper-edge-rvc/Interactive_Voice_Call_with_Famous_Actor.ipynb)
+**Notebooks (in `approach-whisper-edge-rvc/`):**
+
+* `Interactive Voice Call with Famous Actor.ipynb`
+* `RVC.ipynb`
 
 **Demo:**
 [Run Approach 1 in Colab](https://colab.research.google.com/drive/1a8S8cqiVpaz2R4PCb7eH6zZbHiXvPIJF)
 
 **Key Points:**
 
-* **Gemma 3 LLM**: Fine-tuned on Maguy data for personalized style.
-* **EdgeTTS → RVC**: Use Microsoft’s MSA TTS, then convert to Lebanese dialect via RVC model.
-* **Separate RVC notebook** for voice conversion: [RVC.ipynb](approach-whisper-edge-rvc/RVC.ipynb).
+* **Gemma 3 LLM**: Fine-tuned on Maguy data for personalized style.
+* **EdgeTTS → RVC**: Microsoft’s MSA TTS output is converted to Lebanese dialect via RVC.
 
 **Notes:**
 
-* Memory constraints require 4B variant of Gemma for integrated pipeline.
-* MSA-to-dialect conversion adds latency (\~5–8 s).
+* Memory constraints require using the 4B variant of Gemma for the integrated pipeline.
+* The two-stage TTS+conversion adds \~5–8 s latency.
 
 ---
 
@@ -72,6 +73,3 @@ Maguy Bou Ghosn is represented through a voice-bot that listens in colloquial Le
 * ElevenLabs custom-voice subscription is active **until July 2, 2025**; service stops thereafter (portfolio demo only).
 * On Hugging Face (CPU): expect **60–80 s** response time; on Colab (GPU): **3–5 s**.
 * **Gradio audio quirk**: after recording, wait **2–3 s** for the widget to refresh before clicking "Send to Maguy." Only refreshed audio can be transmitted.
-
----
-
